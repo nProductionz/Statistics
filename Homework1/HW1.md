@@ -38,12 +38,3 @@ Participants are measured on the outcome variable both before and after exposure
 Between-Subjects Design:
 
 Participants are divided into different groups, and each group is exposed to a different level of the independent variable (e.g., high vs. low dose of a drug). The outcomes are compared between groups to determine the effect of the independent variable.
-
-
-App:
-
-Use the following links to access the apps.
-
-App1 (C#):
-
-App2 (JS):

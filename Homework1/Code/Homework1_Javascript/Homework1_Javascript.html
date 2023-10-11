@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Homework1</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        .btn-primary {
+            text-align: center;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body onload="initCanvas()">
+    <h1 style="text-align:center">Homework 1</h1>
+    <br>
+    <canvas id="myCanvas" width="500" height="300" style="border: 1px solid #000000; padding: 0; margin: auto; display: block;"></canvas>
+    <br>
+    <div style="display: flex; justify-content: center;">
+        <button class="btn btn-primary" onclick="drawCircle()">Draw Circle</button>
+        <button class="btn btn-primary" onclick="drawDot()">Draw Dot</button>
+        <button class="btn btn-primary" onclick="drawLine()">Draw Line</button>
+        <button class="btn btn-primary" onclick="drawRectangle()">Draw Rectangle</button>
+        <button class="btn btn-primary" onclick="drawAll()">Draw all</button>
+        <button class="btn btn-primary" onclick="clearCanvas()">Clear</button>
+    </div>
+
+    <script>
+        var ctx, x, y;
+
+        function initCanvas() {
+            var canvas = document.getElementById("myCanvas");
+            ctx = canvas.getContext("2d");
+            x = ctx.canvas.width;
+            y = ctx.canvas.height;
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+        }
+
+        function drawCircle() {
+            clearCanvas();
+            ctx.beginPath();
+            ctx.arc(x / 2, y / 2, 50, 0, 2 * Math.PI);
+            ctx.strokeStyle = "blue";
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function drawDot() {
+            clearCanvas();
+            ctx.beginPath();
+            ctx.arc(x / 2, y / 2, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawLine() {
+            clearCanvas();
+            ctx.beginPath();
+            ctx.moveTo(x / 2 - 50, y / 2);
+            ctx.lineTo(x / 2 + 50, y / 2);
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            ctx.closePath();
+        }
+
+        function drawRectangle() {
+            clearCanvas();
+            ctx.beginPath();
+            ctx.rect(x / 2 - 50, y / 2 - 25, 100, 50);
+            ctx.fillStyle = "orange";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+        function drawAll() {
+            clearCanvas();
+
+            ctx.beginPath();
+            ctx.arc(x / 4, y / 4, 50, 0, 2 * Math.PI);
+            ctx.strokeStyle = "blue";
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(x * 3 / 4, y / 4, 5, 0, 2 * Math.PI);
+            ctx.fillStyle = "red";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.moveTo(x / 4 - 75, y * 3 / 4);
+            ctx.lineTo(x / 4 + 75, y * 3 / 4);
+            ctx.strokeStyle = "green";
+            ctx.lineWidth = 3;
+            ctx.stroke();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.rect(x * 3 / 4 -50 , y * 3 / 4 - 25, 100, 50);
+            ctx.fillStyle = "orange";
+            ctx.fill();
+            ctx.closePath();
+        }
+
+
+    </script>
+</body>
+</html>

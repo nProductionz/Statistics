@@ -1,0 +1,16 @@
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\bin\Debug\net6.0-windows\Homework1_c#.exe
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\bin\Debug\net6.0-windows\Homework1_c#.deps.json
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\bin\Debug\net6.0-windows\Homework1_c#.runtimeconfig.json
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\bin\Debug\net6.0-windows\Homework1_c#.dll
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\bin\Debug\net6.0-windows\Homework1_c#.pdb
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c_.Form1.resources
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.csproj.GenerateResource.cache
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.AssemblyInfoInputs.cache
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.AssemblyInfo.cs
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.csproj.CoreCompileInputs.cache
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.dll
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\refint\Homework1_c#.dll
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.pdb
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\Homework1_c#.genruntimeconfig.cache
+C:\Users\Riccardo\Documents\GitHub\StatisticsPuccetti\Homework1_c#\obj\Debug\net6.0-windows\ref\Homework1_c#.dll
