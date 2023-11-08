@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework 5 - Coding section</title>
+    
+</head>
+<style>
+    body {
+        position: relative;
+        box-sizing: border-box;
+    }
+    #container-flex{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container-chart {
+        resize: both;
+        overflow: auto;
+        border: 1px solid lightgray;
+        position: relative;
+    }
+
+    #canvas1,
+    #canvas2,
+    #canvas3 {
+        width: 49%;
+        max-height: 500px;
+        margin: 20px auto;
+    }
+ 
+    #container-form {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+
+    #data {
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <div id="container-form">
+        <form id="data">
+            <label for="server">M servers </label>
+            <input type="text" name="server" id="server">&emsp;&emsp;
+            <label for="attacks">N attacks </label>
+            <input type="text" name="attacks" id="attacks">&emsp;&emsp;
+            <label for="period">T </label>
+            <input type="text" name="period" id="period">&emsp;&emsp;
+            <label for="lambda">Lambda (&lambda; &le; N/T) </label>
+            <input type="text" name="lambda" id="lambda"><br><br>
+            <button type="button" onclick="readData()">Start</button>
+        </form>
+    </div>
+
+
+    <div id="container-flex">
+        <div id="canvas1" class="container-chart">
+            <canvas id="chart"></canvas>
+        </div>
+        <div id="canvas2" class="container-chart">
+            <canvas id="histogram1"></canvas>
+        </div>
+    
+        <div id="canvas3" class="container-chart">
+            <canvas id="histogram2"></canvas>
+        </div>
+
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
