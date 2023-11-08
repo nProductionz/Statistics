@@ -156,66 +156,7 @@ namespace hw5
             return nAttackResult;
         }
 
-        private void fillChart()
-        {
-            int numberOfSystems = int.Parse(textBox1.Text);
-            int lambda = int.Parse(textBox4.Text);
-            int numberOfAttacks = int.Parse(textBox2.Text);
-            int periodTime = int.Parse(textBox3.Text);
-
-            chart1.Series.Clear();
-            chart1.Legends.Clear();
-            chart2.Series.Clear();
-            chart3.Series.Clear();
-
-            float[] xChart1 = getXChart1Values(periodTime, numberOfAttacks);
-            int[] yChart1;
-
-            HashSet<float> xChart2 = new HashSet<float>();
-            Dictionary<int, int> yChart2 = new Dictionary<int, int>();
-
-            HashSet<float> xChart3 = new HashSet<float>();
-            Dictionary<int, int> yChart3 = new Dictionary<int, int>();
-            int randIndx = random.Next(1, numberOfAttacks);
-            chart1.Titles.Clear();
-            chart2.Titles.Clear();
-            chart3.Titles.Clear();
-            chart1.Titles.Add($"Server M = {numberOfSystems} number of attacks N = {numberOfAttacks}");
-            chart2.Titles.Add($"Histogram data at end of period T");
-            chart3.Titles.Add($"Histogram data at random subinterval of T (interval {randIndx} of value {(float)randIndx/numberOfAttacks})");
-
-            for (int i = 0; i < numberOfSystems; i++)
-            {
-                yChart1 = simulateAttacks(numberOfAttacks, lambda, periodTime);
-                var series = new Series();
-                series.ChartType = SeriesChartType.Line;
-                chart1.ChartAreas[0].AxisX.Minimum = 0;
-
-                series.Points.DataBindXY(xChart1, yChart1);
-                chart1.Series.Add(series);
-                //Delete legends
-                chart1.Legends.Clear();
-                //Successful attack at time T
-                xChart2.Add(yChart1.Last());
-                //Counting number of attacks for each server
-                if (yChart2.ContainsKey(yChart1.Last()))
-                    yChart2[yChart1.Last()]++;
-                else
-                    yChart2.Add(yChart1.Last(), 0);
-                //Successful attack at random time
-                xChart3.Add(yChart1[randIndx]);
-                //Counting number of attacks for each server
-                if (yChart3.ContainsKey(yChart1[randIndx]))
-                    yChart3[yChart1[randIndx]]++;
-                else
-                    yChart3.Add(yChart1[randIndx], 0);
-
-            }
-            chart1.ChartAreas[0].AxisX.Title = "Subinterval of T";
-            chart1.ChartAreas[0].AxisY.Title = "Successful attacks";
-            chart1.Invalidate();
-            drawHistogram(xChart2.ToArray(), yChart2.Values.ToArray(), xChart3.ToArray(), yChart3.Values.ToArray());
-        }
+        
 
         private void drawHistogram(float []xChart2, int[] yChart2, float[] xChart3, int[] yChart3)
         {
@@ -225,7 +166,6 @@ namespace hw5
 
             series2.Points.DataBindXY(xChart2, yChart2);
             chart2.Series.Add(series2);
-            //Delete legends
             chart2.Legends.Clear();
 
             double minX = series2.Points.Min(p => p.XValue);
@@ -249,7 +189,6 @@ namespace hw5
 
             series3.Points.DataBindXY(xChart3, yChart3);
             chart3.Series.Add(series3);
-            //Delete legends
             chart3.Legends.Clear();
 
             minX = series3.Points.Min(p => p.XValue);
