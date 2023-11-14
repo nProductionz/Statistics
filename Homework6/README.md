@@ -70,3 +70,131 @@ print(f"Average steps to reach goal: {average_steps}")
 
 ```
 
+
+# Excercise 1
+
+> Consider a scheme where M systems are subject to a series of N attacks. A system is discarded as "unsecure" if it reaches a penetration score of P before reaching, instead, a security score of S. Simulate and represent the probabilities of a system being discarded, for various values of P, example: P = k*10 (k=2,...,10), conditional on the 3 cases for S: S = 20, S = 60, S = 100
+
+The following program simulates many attacks and calculates the probability of each system to be marked as "unsecure" following the text of the request.
+
+## Javascript
+
+```Javascript
+
+function simulateDiscardProbability(M, N, P, S) {
+    let discardedCount = 0;
+
+    for (let i = 0; i < M; i++) {
+        let penetrationScore = 0;
+
+        for (let j = 0; j < N; j++) {
+            penetrationScore += Math.random() * 100; // Simulating an attack, adding a random penetration score
+
+            if (penetrationScore >= P) {
+                break; // System is secure, no need to continue attacks
+            }
+
+            if (penetrationScore < S) {
+                discardedCount++;
+                break; // System is discarded
+            }
+        }
+    }
+
+    return discardedCount / M; // Probability of being discarded
+}
+
+function runSimulation() {
+    const M = 10000; // Number of systems
+    const N = 10;    // Number of attacks
+
+    const S_values = [20, 60, 100]; // Different values of S
+
+    for (let k = 2; k <= 10; k++) {
+        const P = k * 10;
+
+        for (let i = 0; i < S_values.length; i++) {
+            const S = S_values[i];
+
+            const probability = simulateDiscardProbability(M, N, P, S);
+
+            console.log(`For P = ${P} and S = ${S}, Probability of being discarded: ${probability}`);
+        }
+    }
+}
+
+runSimulation();
+
+
+```
+
+
+
+```C#
+
+using System;
+
+class Program
+{
+    static Random random = new Random();
+
+    static double SimulateDiscardProbability(int M, int N, int P, int S)
+    {
+        int discardedCount = 0;
+
+        for (int i = 0; i < M; i++)
+        {
+            double penetrationScore = 0;
+
+            for (int j = 0; j < N; j++)
+            {
+                penetrationScore += random.NextDouble() * 100; // Simulating an attack, adding a random penetration score
+
+                if (penetrationScore >= P)
+                {
+                    break; // System is secure, no need to continue attacks
+                }
+
+                if (penetrationScore < S)
+                {
+                    discardedCount++;
+                    break; // System is discarded
+                }
+            }
+        }
+
+        return (double)discardedCount / M; // Probability of being discarded
+    }
+
+    static void RunSimulation()
+    {
+        const int M = 10000; // Number of systems
+        const int N = 10;    // Number of attacks
+
+        int[] SValues = { 20, 60, 100 }; // Different values of S
+
+        for (int k = 2; k <= 10; k++)
+        {
+            int P = k * 10;
+
+            foreach (int S in SValues)
+            {
+                double probability = SimulateDiscardProbability(M, N, P, S);
+
+                Console.WriteLine($"For P = {P} and S = {S}, Probability of being discarded: {probability}");
+            }
+        }
+    }
+
+    static void Main()
+    {
+        RunSimulation();
+    }
+}
+
+
+```
+
+
+
+
