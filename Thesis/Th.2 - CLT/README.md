@@ -8,7 +8,7 @@ The Central Limit Theorem (CLT) stands as a bedrock principle in statistical the
 
 At its essence, the CLT is a testament to the remarkable regularity observed in the distribution of sample means. Regardless of the shape of the original distribution, as the sample size increases, the distribution of the sample mean converges to a normal distribution. Mathematically, this can be expressed as:
 
-\[ \bar{X} \xrightarrow{d} N(\mu, \frac{\sigma^2}{n}) \]
+$\[ \bar{X} \xrightarrow{d} N(\mu, \frac{\sigma^2}{n}) \]$
 
 where \(\bar{X}\) is the sample mean, \(\mu\) is the population mean, \(\sigma\) is the population standard deviation, and \(n\) is the sample size.
 
