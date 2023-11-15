@@ -22,7 +22,7 @@ The formal proof of the CLT involves advanced mathematical concepts, requiring a
 
 Mathematically, the characteristic function \( \phi(t) \) of a sum of independent random variables is a key element:
 
-\[ \phi_{X_1+X_2+...+X_n}(t) = \prod_{i=1}^{n} \phi_{X_i}(t) \]
+$\[ \phi_{X_1+X_2+...+X_n}(t) = \prod_{i=1}^{n} \phi_{X_i}(t) \]$
 
 The role of the law of large numbers cannot be overstated in the proof of the CLT. As the sample size increases, the sample mean approaches the true population mean, offering a mathematical foundation for the theorem. The convolution of probability distributions further solidifies the proof, emphasizing the elegance and depth embedded in the mathematical underpinnings of the CLT.
 
@@ -38,7 +38,7 @@ Beyond its theoretical elegance, the CLT holds immense practical value in the re
 
 Mathematically, the use of the standard normal distribution (z-distribution) in hypothesis testing and confidence intervals exemplifies the CLT's practical application:
 
-\[ Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \]
+$\[ Z = \frac{\bar{X} - \mu}{\sigma / \sqrt{n}} \]$
 
 Furthermore, the CLT facilitates the standardization of statistical methods, allowing researchers to draw upon a common framework when dealing with sample means. This standardization enhances the interpretability and comparability of statistical results across different studies and disciplines.
 
