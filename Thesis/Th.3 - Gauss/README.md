@@ -21,7 +21,7 @@ $\[ \bar{X} \sim \mathcal{N}(\mu, \frac{\sigma}{\sqrt{n}}) \]$
 This theorem explains the prevalence of the Gaussian distribution in real-world scenarios.
 
 ### Maximum Likelihood Estimation
-The Gaussian distribution parameters, \( \mu \) and \( \sigma \), can be estimated using Maximum Likelihood Estimation. The likelihood function is given by:
+The Gaussian distribution parameters, $\( \mu \)$ and $\( \sigma \)$, can be estimated using Maximum Likelihood Estimation. The likelihood function is given by:
 
 $\[ \mathcal{L}(\mu, \sigma | X) = \prod_{i=1}^{n} \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{(X_i - \mu)^2}{2\sigma^2}} \]$
 
