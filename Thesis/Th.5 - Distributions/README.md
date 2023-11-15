@@ -26,9 +26,34 @@ Continuous distributions model random variables that can take any value within a
 
    Where $\( \text{erf} \)$ is the error function.
 
+
+##### Example in Python:
+```python
+cdf_values = norm.cdf(x, mu, sigma)
+
+plt.plot(x, cdf_values, label='Normal Distribution CDF')
+plt.title('Normal Distribution CDF')
+plt.xlabel('x')
+plt.ylabel('Cumulative Probability')
+plt.legend()
+plt.show()
+
+```
+
 3. **Expected Value and Variance:**
    - Expected value $(\( \mu \)): \( E(X) = \mu \)$
    - Variance $(\( \sigma^2 \)): \( \text{Var}(X) = \sigma^2 \)$
+
+
+##### Example in Python:
+```python
+mean_val = norm.mean(mu, sigma)
+variance_val = norm.var(mu, sigma)
+
+print(f'Expected Value (μ): {mean_val}')
+print(f'Variance (σ^2): {variance_val}')
+
+```
 
 ## Discrete Distributions
 
@@ -45,6 +70,25 @@ In contrast, discrete distributions model random variables with distinct, separa
    - $\( n \)$ is the number of trials,
    - $\( k \)$ is the number of successes,
    - $\( p \)$ is the probability of success.
+
+##### Example in Python:
+   ```python
+   import numpy as np
+   from scipy.stats import norm
+   import matplotlib.pyplot as plt
+
+   mu = 0
+   sigma = 1
+   x = np.linspace(-3, 3, 1000)
+   pdf_values = norm.pdf(x, mu, sigma)
+
+   plt.plot(x, pdf_values, label='Normal Distribution PDF')
+   plt.title('Normal Distribution PDF')
+   plt.xlabel('x')
+   plt.ylabel('Probability Density')
+   plt.legend()
+   plt.show()
+   ```
 
 2. **Expected Value and Variance:**
    - Expected value $(\( \mu \))$: $\( E(X) = np \)$
