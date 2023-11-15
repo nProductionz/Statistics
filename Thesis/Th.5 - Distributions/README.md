@@ -13,7 +13,7 @@ Continuous distributions model random variables that can take any value within a
 1. **Probability Density Function (PDF):** Describes the likelihood of a random variable falling within a specific range.
 
    The PDF of a normal distribution is given by the formula:
-   $$ f(x | \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} $$
+   $ f(x | \mu, \sigma) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x - \mu}{\sigma}\right)^2} $
 
    Where:
    - $\( \mu \)$ is the mean,
@@ -22,7 +22,7 @@ Continuous distributions model random variables that can take any value within a
 2. **Cumulative Distribution Function (CDF):** Represents the probability that a random variable takes a value less than or equal to a given point.
 
    The CDF of a normal distribution is given by:
-   $$ F(x | \mu, \sigma) = \frac{1}{2}\left[1 + \text{erf}\left(\frac{x - \mu}{\sigma \sqrt{2}}\right)\right] $$
+   $ F(x | \mu, \sigma) = \frac{1}{2}\left[1 + \text{erf}\left(\frac{x - \mu}{\sigma \sqrt{2}}\right)\right] $
 
    Where $\( \text{erf} \)$ is the error function.
 
@@ -39,7 +39,7 @@ In contrast, discrete distributions model random variables with distinct, separa
 1. **Probability Mass Function (PMF):** Gives the probability of each possible outcome.
 
    The PMF of a binomial distribution is given by:
-   $$ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k} $$
+   $ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k} $
 
    Where:
    - $\( n \)$ is the number of trials,
@@ -53,7 +53,7 @@ In contrast, discrete distributions model random variables with distinct, separa
 3. **Cumulative Distribution Function (CDF):** Summarizes the probabilities up to a given point in the distribution.
 
    The CDF of a Poisson distribution is given by:
-   $$ P(X \leq k) = \sum_{i=0}^{k} \frac{e^{-\lambda} \lambda^i}{i!} $$
+   $ P(X \leq k) = \sum_{i=0}^{k} \frac{e^{-\lambda} \lambda^i}{i!} $
 
    Where $\( \lambda \)$ is the average rate of occurrence.
 
