@@ -53,7 +53,7 @@ In contrast, discrete distributions model random variables with distinct, separa
 3. **Cumulative Distribution Function (CDF):** Summarizes the probabilities up to a given point in the distribution.
 
    The CDF of a Poisson distribution is given by:
-   $ P(X \leq k) = \sum_{i=0}^{k} \frac{e^{-\lambda} \lambda^i}{i!} $
+   $P(X \leq k) = \sum_{i=0}^{k} \frac{e^{-\lambda} \lambda^i}{i!}$
 
    Where $\( \lambda \)$ is the average rate of occurrence.
 
