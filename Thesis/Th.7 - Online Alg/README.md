@@ -28,7 +28,8 @@ Window-based strategies involve dividing the data stream into fixed-size windows
 
 #### Sliding Window Mean Computation
 
-Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows: $\text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w}$
+Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows: 
+$ \text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w} $
 
 This sliding window mean computation is useful for monitoring trends and identifying anomalies in real-time. The algorithm provides a snapshot of the recent data, allowing for timely responses to changing patterns.
 
@@ -535,3 +536,13 @@ for i in range(0, 100, online_kmeans.batch_size):
 In conclusion, the dynamic landscape of online algorithms for data streams unfolds with endless possibilities. From adaptive techniques and machine learning integrations to simulations in cybersecurity and customer segmentation, the journey is marked by innovation and practical applications.
 The exploration of online algorithms for data streams provides valuable insights into handling continuous data efficiently. By combining theoretical concepts with practical implementation, this thesis aims to empower researchers and practitioners with the knowledge and tools necessary to navigate the challenges posed by big data streams. The evolution and simulations of online algorithms for data streams demonstrate their increasing relevance and applicability in real-world scenarios. As advancements continue, the synergy between theoretical concepts and practical implementations strengthens, fostering innovation and efficiency in handling continuous streams of data.
 As we look towards the future, the challenges of privacy, scalability, and human-centric decision-making beckon researchers and practitioners to continue pushing the boundaries of what online algorithms can achieve. The intersection of theory and practice remains a fertile ground for exploration, paving the way for more efficient, adaptive, and privacy-conscious solutions in the era of big data streams.
+
+
+
+
+
+<script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
