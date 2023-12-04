@@ -1,15 +1,8 @@
 # Thesis: Online Algorithms (Data Streams): Ideas and Code
 
-  
-
 ## Introduction
 
-  
-
 In the era of big data, traditional algorithms often struggle to efficiently process massive datasets due to limitations in memory and processing power. The emergence of data streams has prompted the development of "online" algorithms, which handle data in real-time as it arrives, offering scalable solutions for continuous data analysis.
-
-## Objectives
-
 This thesis aims to provide a comprehensive understanding of online algorithms for data streams, exploring both theoretical concepts and practical implementations. By bridging the gap between theory and application, the goal is to empower researchers and practitioners with the tools necessary to effectively analyze and extract valuable insights from continuously evolving data streams.
   
 
