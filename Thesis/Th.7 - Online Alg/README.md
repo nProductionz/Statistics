@@ -30,7 +30,7 @@ Window-based strategies involve dividing the data stream into fixed-size windows
 
 Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows: 
 
-$$\text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w}$$
+$\text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w}$
 
 
 This sliding window mean computation is useful for monitoring trends and identifying anomalies in real-time. The algorithm provides a snapshot of the recent data, allowing for timely responses to changing patterns.
@@ -370,7 +370,7 @@ With the increasing concern for privacy in the digital age, integrating differen
 
 Extending the Count-Min Sketch to support differential privacy involves introducing noise to the frequency estimates. By carefully calibrating the amount of noise added, one can achieve a balance between privacy preservation and data utility.
 
-$$\text{Count}(e_i) \approx \min_{j} \text{Counter}_{h_j}(e_i) + \text{Noise}_{j}$$
+$\text{Count}(e_i) \approx \min_{j} \text{Counter}_{h_j}(e_i) + \text{Noise}_{j}$
 
 This addition of noise ensures that even with access to frequency estimates, an adversary cannot determine the exact contribution of any specific element in the data stream.
 
