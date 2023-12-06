@@ -30,7 +30,7 @@ Window-based strategies involve dividing the data stream into fixed-size windows
 
 Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows:
 
-![equation](https://latex.codecogs.com/svg.latex?%5Ctext%7BMean%7D_t%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3Dt-w%2B1%7D%5E%7Bt%7D%20x_i%7D%7Bw%7D)
+![equation](https://latex.codecogs.com/svg.latex?%5Ccolor%7Bwhite%7D%20%5Ctext%7BMean%7D_t%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3Dt-w%2B1%7D%5E%7Bt%7D%20x_i%7D%7Bw%7D)
 
 This sliding window mean computation is useful for monitoring trends and identifying anomalies in real-time. The algorithm provides a snapshot of the recent data, allowing for timely responses to changing patterns.
 
