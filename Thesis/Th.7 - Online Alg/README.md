@@ -18,7 +18,7 @@ Streaming algorithms enable efficient processing of data streams with limited me
 
 One exemplary streaming algorithm is the Count-Min Sketch, widely used for approximate frequency counting in data streams. Given a stream of elements $(e_i)$, the Count-Min Sketch maintains a table of counters, and for each element $(e_i)$, increments multiple counters using hash functions. The estimate of the count for $(e_i)$ is the minimum value among these counters.
 
-![equation](https://latex.codecogs.com/svg.latex?%5Ctext%7BMean%7D_t%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3Dt-w%2B1%7D%5E%7Bt%7D%20x_i%7D%7Bw%7D)
+$$\text{Count}(e_i) \approx \min_{j} \text{Counter}_{h_j}(e_i)$$
 
 This allows for a space-efficient way to estimate item frequencies in real-time, making it suitable for applications like network traffic monitoring and clickstream analysis.
 
@@ -28,9 +28,9 @@ Window-based strategies involve dividing the data stream into fixed-size windows
 
 #### Sliding Window Mean Computation
 
-Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows: 
+Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows:
 
-$\text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w}$
+![equation](https://latex.codecogs.com/svg.latex?%5Ctext%7BMean%7D_t%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3Dt-w%2B1%7D%5E%7Bt%7D%20x_i%7D%7Bw%7D)
 
 This sliding window mean computation is useful for monitoring trends and identifying anomalies in real-time. The algorithm provides a snapshot of the recent data, allowing for timely responses to changing patterns.
 
