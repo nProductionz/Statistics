@@ -28,7 +28,7 @@ Window-based strategies involve dividing the data stream into fixed-size windows
 
 #### Sliding Window Mean Computation
 
-Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows:
+Consider a sliding window of size $(w)$ over a data stream $(x_i)$. The mean at each step $(t)$ is computed as follows: 
 
 $\text{Mean}_t = \frac{\sum_{i=t-w+1}^{t} x_i}{w}$
 
