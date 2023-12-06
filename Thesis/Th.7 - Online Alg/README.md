@@ -367,7 +367,7 @@ With the increasing concern for privacy in the digital age, integrating differen
 
 #### Differential Privacy in Count-Min Sketch
 
-Extending the Count-Min Sketch to support differential privacy involves introducing noise to the frequency estimates. By carefully calibrating the amount of noise added, one can achieve a balance between privacy preservation and data utility.
+Extending the Count-Min Sketch to support differential privacy involves introducing noise to the frequency estimates. By carefully calibrating the amount of noise added, one can achieve a balance between privacy preservation and data utility:
 
 $\text{Count}(e_i) \approx \min_{j} \left(\text{Counter}_j(e_i) + \text{Noise}_j\right)$
 
