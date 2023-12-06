@@ -369,7 +369,7 @@ With the increasing concern for privacy in the digital age, integrating differen
 
 Extending the Count-Min Sketch to support differential privacy involves introducing noise to the frequency estimates. By carefully calibrating the amount of noise added, one can achieve a balance between privacy preservation and data utility.
 
-$\text{Count}(e_i) \approx \min_{j} \text{Counter}_{h_j}(e_i) + \text{Noise}_{j}$
+$\text{Count}(e_i) \approx \min_{j} \left(\text{Counter}_j(e_i) + \text{Noise}_j\right)$
 
 This addition of noise ensures that even with access to frequency estimates, an adversary cannot determine the exact contribution of any specific element in the data stream.
 
