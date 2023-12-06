@@ -18,7 +18,7 @@ Streaming algorithms enable efficient processing of data streams with limited me
 
 One exemplary streaming algorithm is the Count-Min Sketch, widely used for approximate frequency counting in data streams. Given a stream of elements $(e_i)$, the Count-Min Sketch maintains a table of counters, and for each element $(e_i)$, increments multiple counters using hash functions. The estimate of the count for $(e_i)$ is the minimum value among these counters.
 
-$$\text{Count}(e_i) \approx \min_{j} \text{Counter}_{h_j}(e_i)$$
+![equation](https://latex.codecogs.com/svg.latex?%5Ctext%7BMean%7D_t%20%3D%20%5Cfrac%7B%5Csum_%7Bi%3Dt-w%2B1%7D%5E%7Bt%7D%20x_i%7D%7Bw%7D)
 
 This allows for a space-efficient way to estimate item frequencies in real-time, making it suitable for applications like network traffic monitoring and clickstream analysis.
 
